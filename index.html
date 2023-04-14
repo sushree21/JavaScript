@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div class="container">   
+    <form action="">
+        <label for="">User Id</label>
+        <input type="text" id="uid"><br>
+        <label for="">Passward</label>
+        <input type="passward" id="psw"><br>
+        <input type="submit" id="s1" onmouseover="f1()">
+    </form>
+</div>
+    <script>
+        const a=document.getElementById("uid")
+        const b=document.getElementById("psw")
+        const c=document.getElementById("s1")
+        function f1(){
+            if(a.value=="susu" && b.value=="1234"){
+                alert("succesfull")
+            }
+            else if(a.value==null){
+                c.style.transform="translatex(160%)";
+            }
+            else{
+                c.style.transform="translatex(-160%)";
+
+            }
+        }
+    </script>
+</body>
+</html>

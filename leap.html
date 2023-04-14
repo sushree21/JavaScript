@@ -1,0 +1,24 @@
+<!-- 18.Write a program which tells the number of days in a month, now consider leap year. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let days=function(month,year){
+            return new Date(year,month,0).getDate();
+        };
+        document.write("days in march"+days(3,2023));
+        if(days%4==0){
+            document.write("it is a leap year");
+        }
+        else{
+            document.write("it is not a leap year");
+        }
+    </script>
+</body>
+</html>

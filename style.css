@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(132, 14, 73);
+}
+.container{
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: auto;
+    background-color: #ffffff;
+}
+div ,form{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+#s1{
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: rgb(132, 14, 73);
+    padding: 3px;
+}
